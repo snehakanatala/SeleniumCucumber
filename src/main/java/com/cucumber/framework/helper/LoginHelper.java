@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 
+import com.cucumber.framework.driver.BasePage;
+
 /**
  * 
  * @author kanatala

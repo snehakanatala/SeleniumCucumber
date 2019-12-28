@@ -2,6 +2,8 @@ package com.cucumber.framework.helper;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.cucumber.framework.driver.BasePage;
+
 /**
  * 
  * @author kanatala

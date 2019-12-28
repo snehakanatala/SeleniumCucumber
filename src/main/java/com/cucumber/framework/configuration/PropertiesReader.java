@@ -1,4 +1,4 @@
-package com.cucumber.framework.helper;
+package com.cucumber.framework.configuration;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

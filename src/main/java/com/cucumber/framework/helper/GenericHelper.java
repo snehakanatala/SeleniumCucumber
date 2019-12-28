@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import com.cucumber.framework.configuration.PropertiesReader;
+import com.cucumber.framework.driver.BasePage;
+
 /**
  * 
  * @author kanatala
