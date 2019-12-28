@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
  * 
  * @author kanatala
  *
+ * Base class for WebDriver
  */
 public class BasePage {
 

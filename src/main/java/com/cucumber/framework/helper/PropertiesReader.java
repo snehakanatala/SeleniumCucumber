@@ -10,6 +10,7 @@ import java.util.Properties;
  * 
  * @author kanatala
  *
+ * loads login credentials and configuration details from properties file
  */
 public class PropertiesReader {
 

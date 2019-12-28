@@ -15,6 +15,7 @@ import net.masterthought.cucumber.ReportBuilder;
  * 
  * @author kanatala
  *
+ * Generates cucumber reports 
  */
 public class CucumberReport implements ISuiteListener {
 	

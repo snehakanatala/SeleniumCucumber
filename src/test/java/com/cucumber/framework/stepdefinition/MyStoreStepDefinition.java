@@ -3,7 +3,9 @@ package com.cucumber.framework.stepdefinition;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import com.cucumber.framework.helper.BrowserHelper;
 import com.cucumber.framework.helper.GenericHelper;
+import com.cucumber.framework.helper.LoginHelper;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -19,18 +21,20 @@ import cucumber.api.java.en.When;
 public class MyStoreStepDefinition {
 	
 	GenericHelper helper = new GenericHelper();	
+	LoginHelper loginHelper = new LoginHelper();
+	BrowserHelper browserHelper = new BrowserHelper();
 	String item = null;
 	
 	@Before
 	public void setup() {
-		helper.loadConfig();
-		helper.launchChrome();
-		helper.navigateToMyStore();		
+		GenericHelper.loadConfig();
+		browserHelper.launchChrome();
+		browserHelper.navigateToMyStore();		
 	}
 	
 	@Given("^I login to My Store$")
 	public void loginToMyStore() {
-		helper.login();
+		loginHelper.login();
 	} 
 	
 	@When("^I update my first name to \"([^\"]*)\"$")
@@ -56,7 +60,7 @@ public class MyStoreStepDefinition {
 	
 	@After
 	public void teardown() {
-		helper.logout();
-		helper.closeBrowser();
+		loginHelper.logout();
+		browserHelper.closeBrowser();
 	}
 }

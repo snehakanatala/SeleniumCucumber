@@ -3,8 +3,8 @@ This feature verifies updation of personal details of the user
  
 Scenario: Check that user can update his/her first name
 Given I login to My Store
-When I update my first name to "Sneha"
-Then I verify that my first name is updated to "Sneha"
+When I update my first name to "SnehaNew"
+Then I verify that my first name is updated to "SnehaNew"
 
 Scenario: Check that user can place an order
 Given I login to My Store
